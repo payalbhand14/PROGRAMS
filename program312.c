@@ -5,7 +5,7 @@ void Display(int *ptr)
 {
     printf("%d\n",ptr[0]);
     printf("%d\n",ptr[1]);
-    printf("%d\n",ptr[2]);
+    printf("%d\n",ptr[2]);//*(ptr + 2)
     printf("%d\n",ptr[3]);
     printf("%d\n",ptr[4]);
 
