@@ -23,8 +23,13 @@ class Number
 
 int main()
 {
+    //Step1: Allocate the memory
     Number *number1 = new Number(5);
     Number *number2 = new Number(7);
+
+    //step2: use memory
+
+    //step3: deallocate the memory
 
     return EXIT_SUCCESS;
 }
