@@ -10,12 +10,12 @@ int main()
     cin>>iSize;
 
     //Step1 : Allocate the memory
-    ptr = new int[iSize];
+    ptr = new int[iSize]; //ptr = (int *)malloc(sizeof(int)*iSize);
 
     //Step2 : Use the memory
 
     //step3 : Free the memory
-    delete ptr;
+    delete ptr; // free(ptr)
 
     return EXIT_SUCCESS;
 }
