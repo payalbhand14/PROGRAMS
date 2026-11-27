@@ -2,8 +2,7 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
-
-int CountFrequency(int Arr[],int  iLength, int iNo)
+int SearechElement(int Arr[],int  iLength, int iNo)
 {
     int iCount = 0, iCnt = 0;
 
@@ -14,14 +13,22 @@ int CountFrequency(int Arr[],int  iLength, int iNo)
             iCount++;
         }
     }
-    
-    return iCount;
+
+    if( iCount == 0)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 }
 
 int main()
 {
     int *ptr = NULL;
-    int iSize = 0, iCnt = 0, iRet = 0, iValue = 0;
+    int iSize = 0, iCnt = 0, iValue = 0;
+    bool bRet = 0;
 
     printf("Enter number of elements :\n");
     scanf("%d",&iSize);
@@ -42,9 +49,16 @@ int main()
     printf("Enter the number that you to searech :\n");
     scanf("%d",&iValue);
 
-    iRet = CountFrequency(ptr,iSize,iValue);//hybride
+    bRet = SearechElement(ptr,iSize,iValue);//hybride
 
-    printf("Frequency is :%d\n",iRet);
+    if(bRet == true)
+    {
+        printf("element is present\n");
+    }
+    else
+    {
+        printf("there is no such elemnet\n");
+    }
 
     free(ptr);
 
