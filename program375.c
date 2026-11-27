@@ -22,7 +22,7 @@ bool SearechElement(int Arr[],int  iLength, int iNo)
         iEnd--;
     }
 
-    // TIME CMPLEXCITY = O(N/2)
+// TIME CMPLEXCITY = O(N/2)
 
 }
 

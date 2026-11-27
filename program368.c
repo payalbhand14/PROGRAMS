@@ -23,6 +23,7 @@ int SearechElement(int Arr[],int  iLength, int iNo)
     {
         return true;
     }
+     //time complixcity : o(n)
 }
 
 int main()

@@ -12,10 +12,11 @@ int SearechElement(int Arr[],int  iLength, int iNo)
         {
             return true; // bad programming practice
         }
-        
+
             return false;
 
     }
+     //time complixcity : o(n)
 
 }
 

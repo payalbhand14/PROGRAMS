@@ -16,7 +16,7 @@ int SearechElement(int Arr[],int  iLength, int iNo)
         
         return bFlag;
 
-        //time complixcity : o(n)
+        //time complixcity : O(N)
 
     }
 
